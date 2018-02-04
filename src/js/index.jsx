@@ -4,12 +4,14 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import promiseMiddleware from 'redux-promise-middleware';
 import App from './app';
+import reducers from './rootReducer';
 
 /* eslint-disable no-underscore-dangle */
-const composeEnhancers = window.__REDUXDEVTOOLS_EXTENSION_COMPOSE || compose;
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(
-  reducers, composeEnhancers(applyMiddleware(promiseMiddleware()))
+  reducers,
+  composeEnhancers(applyMiddleware(promiseMiddleware()))
 );
 /* eslint-enable */
 
