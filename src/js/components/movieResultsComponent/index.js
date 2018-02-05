@@ -4,6 +4,7 @@ import movieResults from './movieResults';
 function mapStoreToProps(store) {
   return {
     searchResults: store.search.movieResults,
+    movieCache: store.results.movieCache,
   };
 }
 

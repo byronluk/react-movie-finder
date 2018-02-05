@@ -1,4 +1,4 @@
-import OMDB_API_KEY from './config';
+import OMDB_API_KEY from '../../../../config';
 
 const axios = require('axios');
 
