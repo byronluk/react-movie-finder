@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import MovieDetails from './movieDetails';
+import MovieDetails from '../components/MovieDetails';
 
 function mapStoreToProps(store) {
   return {

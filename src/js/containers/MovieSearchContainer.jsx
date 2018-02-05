@@ -1,7 +1,7 @@
 import React from 'react';
 
-import MovieSearchForm from '../components/movieSearchComponent';
-import MovieResults from '../components/movieResultsComponent';
+import MovieResults from './MovieResults';
+import MovieSearch from './MovieSearch';
 
 class MovieSearchContainer extends React.Component {
   constructor(props) {
@@ -11,8 +11,8 @@ class MovieSearchContainer extends React.Component {
   render() {
     return (
       <div>
-        <h1>Movie Finder</h1>
-        <MovieSearchForm />
+        <h1 className='page-title'>Movie Finder</h1>
+        <MovieSearch />
         <MovieResults />
       </div>
     );

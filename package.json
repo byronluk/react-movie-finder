@@ -9,7 +9,7 @@
     "less": "lessc src/css/style.less dist/css/style.css",
     "less-watch": "less-watch-compiler src/css dist/css style.less",
     "lint": "eslint .",
-    "test": "npm run build && mocha test/setup.js test/*.spec.js"
+    "test": "mocha test/setup.js test/*.spec.js"
   },
   "dependencies": {
     "axios": "^0.16.1",
