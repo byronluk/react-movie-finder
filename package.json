@@ -7,6 +7,7 @@
     "build": "npm run less && webpack",
     "start": "npm run build && node server/index.js",
     "less": "lessc src/css/style.less dist/css/style.css",
+    "less-watch": "less-watch-compiler src/css dist/css style.less",
     "lint": "eslint .",
     "test": "npm run build && mocha test/setup.js test/*.spec.js"
   },
@@ -24,6 +25,7 @@
     "json-loader": "^0.5.4",
     "less": "^2.7.1",
     "less-plugin-autoprefix": "^1.5.1",
+    "less-watch-compiler": "^1.11.0",
     "lodash": "^4.15.0",
     "lodash-webpack-plugin": "^0.10.2",
     "morgan": "^1.8.1",

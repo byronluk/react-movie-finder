@@ -11,7 +11,7 @@ class MovieSearchContainer extends React.Component {
   render() {
     return (
       <div>
-        <h1>Movie Search Container</h1>
+        <h1>Movie Finder</h1>
         <MovieSearchForm />
         <MovieResults />
       </div>

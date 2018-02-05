@@ -34,11 +34,18 @@ class MovieResults extends React.Component {
           <div>Enter your movie above</div> :
           searchResults.map((value, index) => (
             <div className='movie-container' key={ index }>
-              <p>{ value.Title }</p>
+              <img
+                src={ value.Poster }
+                alt={ `${value.Title} Poster` }
+                className='movie-poster'
+              />
+              <h2 className='movie-title'>{ value.Title }</h2>
+              <p className='movie-year'>Released { value.Year }</p>
               <Link
                 onClick={ this.onLinkClick }
                 to={ `/movie/${value.imdbID}` }
                 name={ value.imdbID }
+                className='more-info'
               >
                 More Information
               </Link>
