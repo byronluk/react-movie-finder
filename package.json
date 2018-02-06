@@ -4,8 +4,8 @@
   "description": "A new React project.",
   "main": "server/index.js",
   "scripts": {
-    "build": "npm run less && webpack",
     "start": "npm run build && node server/index.js",
+    "build": "npm run less && webpack",
     "less": "lessc src/css/style.less dist/css/style.css",
     "less-watch": "less-watch-compiler src/css dist/css style.less",
     "lint": "eslint .",

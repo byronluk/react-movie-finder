@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   context: path.join(__dirname, '/src'),
@@ -18,6 +19,11 @@ module.exports = {
     },
     extensions: ['.js', '.jsx']
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      REACT_APP_OMDB_API_KEY: JSON.stringify(process.env.REACT_APP_OMDB_API_KEY),
+    })
+  ],
 
   module: {
     loaders: [

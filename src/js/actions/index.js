@@ -1,6 +1,8 @@
-import OMDB_API_KEY from '../../../config';
+// import OMDB_API_KEY from '../../../config';
 
 const axios = require('axios');
+//  env variable
+const OMDB_API_KEY = REACT_APP_OMDB_API_KEY;
 
 export const onMovieSearch = (value) => {
   return {
