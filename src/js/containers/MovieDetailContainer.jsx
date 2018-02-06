@@ -9,7 +9,6 @@ class MovieDetailContainer extends React.Component {
   render() {
     return (
       <div>
-        <h1>Movie Description</h1>
         <MovieDetails />
       </div>
     );

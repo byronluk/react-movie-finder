@@ -12,8 +12,7 @@ function checkCache(id, cache, onClick, fromCache) {
 const MovieSearchResults = ({ searchResults, movieCache, onClick, fromCache }) => {
   return (
     <div className='search-results-container'>
-      { searchResults.length === 0 ?
-        <div>Enter your movie above</div> :
+      { searchResults.length !== 0 &&
         searchResults.map((value, index) => (
           <div className='movie-container' key={ index }>
             <img
@@ -30,7 +29,6 @@ const MovieSearchResults = ({ searchResults, movieCache, onClick, fromCache }) =
             >
               More Information
             </Link>
-            <hr />
           </div>
         ))
       }

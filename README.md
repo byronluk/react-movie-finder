@@ -8,3 +8,4 @@ run npm start
 ###To do
 - Finish styling
 - Clean up code and separate presentational/container components
+- Add error handlers
