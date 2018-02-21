@@ -4,10 +4,6 @@ import MovieResults from './MovieResults';
 import MovieSearch from './MovieSearch';
 
 class MovieSearchContainer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const MovieDetails = ({ movieInfo }) => {
   return (
@@ -34,6 +35,10 @@ const MovieDetails = ({ movieInfo }) => {
       </div>
     </div>
   );
+};
+
+MovieDetails.propTypes = {
+  movieInfo: PropTypes.object,
 };
 
 export default MovieDetails;

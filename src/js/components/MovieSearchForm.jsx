@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const MovieSearchForm = ({ onSubmit }) => {
   let input;
@@ -31,6 +32,10 @@ const MovieSearchForm = ({ onSubmit }) => {
       </button>
     </form>
   );
+};
+
+MovieSearchForm.propTypes = {
+  onSubmit: PropTypes.func,
 };
 
 export default MovieSearchForm;

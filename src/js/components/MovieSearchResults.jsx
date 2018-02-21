@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
 //  checks cache, returns onclick prop if movie is n/a or fromcache prop if movie is available
 function checkCache(id, cache, onClick, fromCache) {
   const cacheIndex = cache.findIndex(cacheItem => id === cacheItem.imdbID);
@@ -34,6 +36,13 @@ const MovieSearchResults = ({ searchResults, movieCache, onClick, fromCache }) =
       }
     </div>
   );
+};
+
+MovieSearchResults.propTypes = {
+  searchResults: PropTypes.array,
+  movieCache: PropTypes.array,
+  onClick: PropTypes.func,
+  fromCache: PropTypes.func,
 };
 
 export default MovieSearchResults;
