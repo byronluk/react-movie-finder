@@ -1,13 +1,15 @@
-# Movie Finder built with React, Redux
+# Movie Finder
 
-### Thanks to OMDBAPI for movie data
+### Description
 
-```
+Utilized OMDB API to access movie data
+
+### Set up
+
 run npm start
-```
 
-### To do
+### Todo
 
-* Finish styling
-* Clean up code and separate presentational/container components
-* Add error handlers
+* [x] Finish styling
+* [ ] Clean up code and separate presentational/container components
+* [ ] Add error handlers
